@@ -1,5 +1,6 @@
 package jUnit;
 
+import com.jsystems.User;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -44,4 +45,22 @@ public class FirstjUnitTest extends ConfigUnit {
         assertArrayEquals(integery.toArray(), integery2.toArray());
 
     }
+
+    String ala = "ala";
+
+    String ala2 = new String("ala");
+    String ala3 = ala2;
+    @Test
+    public void fourthTest(){
+        assertTrue(ala == ala2);
+        assertTrue(ala.equals(ala2));
+
+    }
+    User naszUser = new User();
+    @Test
+    public void fifthTest(){
+        assertTrue(naszUser.countAge(20)==120);
+    }
+
+
 }
