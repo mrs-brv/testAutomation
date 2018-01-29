@@ -19,14 +19,15 @@ public class FirstjUnitTest extends ConfigUnit {
 
     @Test
     public void firstTest() {
-        assertFalse("działa",testvalue==(1+1));
+        assertFalse("działa",testvalue==(1+3));
+        assertTrue("działa",testvalue==(1+1));
     }
     @Test
     public void secondTest(){
         Integer wartoscTestowa = null;
         assertNull(wartoscTestowa);
         wartoscTestowa=1;
-        assertNull(wartoscTestowa);
+        assertNotNull(wartoscTestowa);
 
     }
 }
