@@ -25,6 +25,8 @@ public class FirstjUnitTest extends ConfigUnit {
     public void secondTest(){
         Integer wartoscTestowa = null;
         assertNull(wartoscTestowa);
+        wartoscTestowa=1;
+        assertNull(wartoscTestowa);
 
     }
 }
