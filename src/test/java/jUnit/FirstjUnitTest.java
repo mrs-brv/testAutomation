@@ -22,7 +22,6 @@ public class FirstjUnitTest extends ConfigUnit {
     List<Integer> integery = Arrays.asList(1,2,3,4,5,6);
     List<Integer> integery2 = Arrays.asList(1,2,3,4,5,6);
 
-//as
     @Test
     public void firstTest() {
         assertFalse("działa",testvalue==(1+3));
@@ -52,7 +51,7 @@ public class FirstjUnitTest extends ConfigUnit {
     String ala3 = ala2;
     @Test
     public void fourthTest(){
-        assertTrue(ala == ala2);
+        assertFalse(ala == ala2);
         assertTrue(ala.equals(ala2));
 
     }
