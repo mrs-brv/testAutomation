@@ -28,7 +28,7 @@ public class JupiterTest extends ConfigJupiter{
         assertTrue(age instanceof Integer);
     }
     @ParameterizedTest
-    @ValueSource(ints={1,2,3,4})
+    @ValueSource(ints={1,2,3,4,5})
     public void withValueSourceTest(int value){
         assertTrue(value<100);
     }
