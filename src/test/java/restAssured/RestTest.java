@@ -13,13 +13,14 @@ import static org.hamcrest.CoreMatchers.is;
 
 
 
-public class RestTest {
+public class RestTest extends Config{
     @Test
     public void firstTest(){
         given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get("http://www.mocky.io/v2/5a6b69ec3100009d211b8aeb")
+                .get("/5a6b69ec3100009d211b8aeb")
+//                .get("http://www.mocky.io/v2/5a6b69ec3100009d211b8aeb")
                 .then()
                 .assertThat()
                 .statusCode(200)
@@ -30,7 +31,8 @@ public class RestTest {
     public void firstTestinaczej(){
         JsonPath jsonPath = given()
                 .when()
-                .get("http://www.mocky.io/v2/5a6b69ec3100009d211b8aeb")
+                .get("/5a6b69ec3100009d211b8aeb")
+//                .get("http://www.mocky.io/v2/5a6b69ec3100009d211b8aeb")
                 .then()
                 .assertThat()
                 .statusCode(200)
@@ -50,7 +52,8 @@ public class RestTest {
         given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get("http://www.mocky.io/v2/5a6a58222e0000d0377a7789")
+                .get("/5a6a58222e0000d0377a7789")
+//                .get("http://www.mocky.io/v2/5a6a58222e0000d0377a7789")
                 .then()
                 .assertThat()
                 .statusCode(200)
